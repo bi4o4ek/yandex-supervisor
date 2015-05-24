@@ -9,7 +9,7 @@ It is must be run as root
     nohup ./supervisor.sh cron syslog > /var/log/supervisor.log &
 
 ##Stop example:
-pkill -f supervisor.sh
+    pkill -f supervisor.sh
 
 ## TODO:
 Make this script runable through systemd as daemon.
