@@ -1,6 +1,6 @@
 # Supervisor
 
-This tool starts services if they unexpectedly stopped
+This tool starts services if they unexpectedly stopped. It is use systemctl, so run it on up-to-date OS. For example, Ubuntu 15.04.
 
 It is must be run as root
 
