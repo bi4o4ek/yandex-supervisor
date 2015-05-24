@@ -38,6 +38,11 @@ display_usage() {
     echo "Usage: ${0} [-h] <service> ..." 
 }
 
+if ! $CMD --version &>/dev/null; then
+    echo 'Could not find systemctl. Upgrade you OS please.'
+    exit 1
+fi
+
 if [  $# -eq 0 ] || [ "${1}" = '--help' ] || [ "${1}" = '-h' ]; then
     display_usage
     exit 0
